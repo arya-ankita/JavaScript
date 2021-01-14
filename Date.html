@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var d = new.Date(2018,5,11);
+		document.write(d);
+
+		var dateObj = new Date();
+		var month = dateObj.getUTCMonth();
+		var day = dateObj.getUTCDate();
+		var year = dateObj.getUTCFullYear();
+
+		document.write(year + "/" + month +"/" + day);
+
+	</script>
+
+	<script type="text/javascript">
+		var d = new Date();
+		var n = d.getTime();
+
+		var hour = d.getHours();
+		var minute = d.getMinutes();
+		var second = d.getSeconds();
+
+		document.write(hour +":"+ minute+":"+second);
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<script type="text/javascript">
+	
+	const bioData={
+		name: "Ankita",
+		age: 26,
+		deg: 'MCS',
+
+		hobb:{
+			first: "badminton",
+			sec: "youtube"
+		}
+	}
+    
+    // es5 
+	// console.log(`My name is ${bioData.name}`);
+
+    // es6
+	// let {name, age, deg}= bioData;
+
+	// second type in es6
+	// let name, age,deg;
+    //  jo naam humne object k andr diye hai hum wahi naam use kar sakte hai, agr alg naam liya to undefined bata dega. but there is a way to use different name 
+	// ({name,age,deg} = bioData);
+
+
+	// way to use diff. name
+	let {name:myname, age,deg,hobb} = bioData;
+	console.log(`My name is ${myname} My favourite hobby is ${hobb.sec}`);
+
+
+
+</script>

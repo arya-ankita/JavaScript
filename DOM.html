@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom</title>
+</head>
+<body>
+
+	<p id="thapa">Thapa</p>
+	<p class="welcome"> Technical</p>
+	<p class="welcome">Hello</p>
+	<p class="welcome"> Hey</p>
+
+
+	<ul><li>Like</li>
+		<li>Share</li>
+		<li>Subscribe</li></ul>
+
+	<!-- how to access element by ID -->
+
+	<script type="text/javascript">
+
+		var a = document.getElementById("thapa").innerHTML;
+		document.write(a);
+		
+	</script>
+
+<!-- How to access element by ClassName -->
+	<script type="text/javascript">
+		var b = document.getElementsByClassName("welcome")[1].innerHTML;
+		document.write(b);
+	</script>
+<!-- Access element by tagname -->
+	<script type="text/javascript">
+		var tag = document.getElementsByTagName("p").innerHTML;
+		document.write(tag);
+	</script>
+
+	<!-- Access first element of any tag-->
+   <script>
+   	    var p = document.querySelector('p');
+   	    document.write(p);
+   </script>
+
+   <!-- .innerHTml is used to see content of that tag or class or id -->
+
+   <!-- Add a new child in a body -->
+    <script type="text/javascript">
+    	 var para = document.createElement("p");
+         var textNode = document.createTextNode("This is a new node");
+         para.appendChild(textNode);
+         console.log(para);
+
+         document.body.appendChild(para); 
+
+
+        // Access first and last child 
+        // list me agar hum gap dete hai ul k baad to wo text dikhata hai output me, isiliye gap nahi diya humne.
+    var list = document.querySelector("ul");
+    console.log(list);
+
+    console.log(list.firstChild);
+    console.log(list.lastChild);
+    </script>
+
+
+    <!-- Siblings to get karna -->
+    <script type="text/javascript">
+    	
+    	var firstSibling = thapa.nextElementSibling;
+    	console.log(firstSibling);
+
+    	var secongSibling = thapa.nextElementSibling.nextElementSibling;
+    	console.log(secongSibling);
+
+
+    	// finding the parent node 
+
+    	console.log(list.parentNode);
+    </script>
+
+
+  
+</body>
+</html>

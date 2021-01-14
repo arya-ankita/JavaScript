@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <script type="text/javascript">
+  	
+  	var array = ["Ankita", "Arya", 6, "Archita"];
+
+  	document.write(array.length);
+  	document.write("<br>");
+  	document.write(array.sort());
+  	document.write("<br>");
+
+  	// push method add element at the end of the array
+  	array.push("Archita");
+  	document.write(array);
+  	document.write("<br>");
+
+  	// pop removes the element from end of the array
+  	array.pop();
+  	document.write(array);
+  	document.write("<br>");
+
+  	// when we want to do push and pop on initial index, so we use shift and unshift method
+    // it is removing the frist element of array.
+  	array.shift();
+  	document.write(array);
+  	document.write("<br>");
+
+    
+  	array.unshift();
+  	document.write(array);
+  	document.write("<br>");
+
+    // add element at first index
+  	array.unshift("AAA");
+  	document.write(array);
+  	document.write("<br>");
+
+
+  	// reverse the array
+  	array.reverse();
+  	document.write(array);
+  	document.write("<br>");
+
+    // return the boolean value, var is array or  not
+  	var check = Array.isArray(array);
+  	document.write(check);
+
+     // concatinate two array
+     var second = ["Hello", "Hi"];
+     document.write(array.concat(second));
+
+     // gives index of an element
+     document.write(array.indexof("Arya"));
+
+  </script>
+
+</body>
+</html>
